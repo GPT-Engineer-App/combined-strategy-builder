@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Box, Heading, Text, Textarea, Button, useToast, OrderedList, ListItem, Code } from "@chakra-ui/react";
 
 const Index = () => {
@@ -65,6 +66,9 @@ const Index = () => {
           </Code>
         </Box>
       )}
+      <Link to="/manual">
+        <Button marginLeft="10px">PineScript Manual</Button>
+      </Link>
     </Box>
   );
 };
